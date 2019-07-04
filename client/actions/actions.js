@@ -2,21 +2,32 @@ import * as types from '../constants/actionTypes';
 
 // export actions
 
-export const genQuote = (newQuote) => ({
-  // this type property dictates how we plan to update state
-  type: types.GEN_QUOTE,
-  // this payload property is what we update state with
-  payload: {
-    quote: newQuote
-  }
-});
+// export const genQuote = (newQuote) => ({
+//   // this type property dictates how we plan to update state
+//   type: types.GEN_QUOTE,
+//   // this payload property is what we update state with
+//   payload: {
+//     quote: newQuote
+//   }
+// });
 
-export const genAuthor = (newAuthor) => ({
-  type: types.GEN_AUTHOR,
-  payload: {
-    author: newAuthor
-  }
-})
+// export const genAuthor = (newAuthor) => ({
+//   type: types.GEN_AUTHOR,
+//   payload: {
+//     author: newAuthor
+//   }
+// })
+
+export const genQuotes = (newQuotes) => {
+  return (
+    {
+      type: types.GEN_QUOTES,
+      payload: {
+        newQuotes
+      }
+    }
+  )
+}
 
 export const thunkGenQuote = () => {
   return ((dispatch) => {
@@ -26,6 +37,6 @@ export const thunkGenQuote = () => {
       cache: 'default' 
   })
       .then(res => res.json())
-      .then(quote => quote)
+      .then(quote => dispatch(genQuotes(quote)))
   })
 }

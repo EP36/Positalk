@@ -4,11 +4,22 @@
   font-family: Helvetica, sans-serif;
   color: whitesmoke;
   display: flex;
-  
+  height: 100vh;
 }
 
 .container {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+}
+
+.outerbox {
   display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   
 }
 
@@ -20,7 +31,9 @@ body {
 
 }
 
+
 button {
+  margin-top: 10px;
   float: right;
   width: 140px;
   height: 45px;

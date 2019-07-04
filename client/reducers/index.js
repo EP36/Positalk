@@ -7,7 +7,7 @@ import quoteReducer from './quoteReducer';
 // combine reducers
 const reducers = combineReducers({
   // if we had other reducers, they would go here
-  quotes: quoteReducer
+  reducedQuote: quoteReducer
 });
 
 // make the combined reducers available for import
