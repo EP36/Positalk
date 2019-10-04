@@ -34,13 +34,13 @@ const quoteReducer = (state=initialState, action) => {
 
       case types.GEN_QUOTES:
         let stateClone = { ...state };
-        console.log('this is stateClone', stateClone);
+        // console.log('this is stateClone', stateClone);
         newQuotes = action.payload.newQuotes;
-        console.log('this is newQuotes', newQuotes);
+        // console.log('this is newQuotes', newQuotes);
         let index = Math.floor(Math.random() * 15)
-        console.log(index)
+        // console.log(index)
         stateClone.quotes = newQuotes.api[index];
-        console.log('this is stateClone.quotes', stateClone.quotes);
+        // console.log('this is stateClone.quotes', stateClone.quotes);
         return stateClone;
 
       default: return state;

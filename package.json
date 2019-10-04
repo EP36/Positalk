@@ -1,46 +1,59 @@
 {
-  "name": "positalk",
-  "version": "1.0.0",
-  "description": "quotes CRUD app",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon server/server.js",
-    "build": "NODE_ENV=production webpack",
-    "dev": "npm start & NODE_ENV=development webpack-dev-server --open",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EP36/Positalk-1.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/EP36/Positalk-1/issues"
-  },
-  "homepage": "https://github.com/EP36/Positalk-1#readme",
-  "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0"
-  },
-  "dependencies": {
-    "babel": "^6.23.0",
-    "babel-loader": "^8.0.6",
-    "css-loader": "^3.0.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.6.3",
-    "nodemon": "^1.19.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-redux": "^7.1.0",
-    "redux": "^4.0.1",
-    "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.35.2",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
-  }
+ "name": "positalk",
+ "version": "1.0.0",
+ "description": "quotes CRUD app",
+ "main": "index.js",
+ "scripts": {
+  "start": "nodemon server/server.js",
+  "build": "NODE_ENV=production webpack",
+  "dev": "NODE_ENV=development webpack",
+  "dev-server": "npm start & NODE_ENV=production webpack-dev-server",
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "reactide-server": "webpack-dev-server --config reactide.config.js --mode development --hot"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/EP36/Positalk-1.git"
+ },
+ "author": "",
+ "license": "ISC",
+ "bugs": {
+  "url": "https://github.com/EP36/Positalk-1/issues"
+ },
+ "homepage": "https://github.com/EP36/Positalk-1#readme",
+ "devDependencies": {
+  "@babel/cli": "^7.0.0-beta.40",
+  "@babel/core": "^7.0.0-beta.40",
+  "@babel/plugin-proposal-class-properties": "^7.4.4",
+  "@babel/plugin-transform-runtime": "^7.4.4",
+  "@babel/preset-env": "^7.4.5",
+  "@babel/preset-react": "^7.0.0-beta.40",
+  "babel-loader": "^8.0.0-beta.0",
+  "css-loader": "^2.1.1",
+  "file-loader": "^4.0.0",
+  "html-webpack-plugin": "^3.2.0",
+  "mini-css-extract-plugin": "^0.7.0",
+  "node-sass": "^4.12.0",
+  "sass-loader": "^7.1.0",
+  "style-loader": "^0.23.1",
+  "url-loader": "^2.0.0",
+  "webpack": "^4.33.0",
+  "webpack-cli": "^3.3.2",
+  "webpack-dev-server": "^3.7.0"
+ },
+ "dependencies": {
+  "@babel/runtime": "^7.4.5",
+  "express": "^4.17.1",
+  "mongoose": "^5.6.3",
+  "nodemon": "^1.19.1",
+  "npmtest-reactide": "^1.1.1",
+  "prop-types": "^15.6.2",
+  "react": "^16.8.6",
+  "react-dom": "^16.8.6",
+  "react-redux": "^7.1.0",
+  "redux": "^4.0.4",
+  "redux-devtools-extension": "^2.13.8",
+  "redux-logger": "^3.0.6",
+  "redux-thunk": "^2.3.0"
+ }
 }

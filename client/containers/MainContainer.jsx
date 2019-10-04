@@ -47,7 +47,7 @@ class MainContainer extends Component {
         <div className='outerbox'>
           <Quote quoteskey={this.props.quote} />
           <Author authorkey={this.props.quote} />
-        <QuoteGenerator onClick={() => {this.props.genQuotes()}} />
+        <QuoteGenerator onClick={() => this.props.genQuotes} />
         </div>
       </div>
       
