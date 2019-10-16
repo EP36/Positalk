@@ -3,8 +3,6 @@ import * as types from '../constants/actionTypes';
 
 const initialState = {
   // state goes here
-  // quote: '"New day, same grind."',
-  // author: 'EP'
   quotes: {}
 }
 
