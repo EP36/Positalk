@@ -43,7 +43,7 @@
  },
  "dependencies": {
   "@babel/runtime": "^7.4.5",
-  "express": "^4.17.1",
+  "express": "^4.17.3",
   "mongoose": "^5.6.3",
   "nodemon": "^1.19.1",
   "npmtest-reactide": "^1.1.1",
